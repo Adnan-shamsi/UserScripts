@@ -27,7 +27,7 @@ window.addEventListener('load', (event) => {
       args.forEach(arg  => document.querySelectorAll(arg).forEach(e => execute(() => e.remove())))
     }
 
-    execute(() => removeAll(toRemoveList));
+    execute(() => removeAll(...toRemoveList));
 
     execute(()=>{
          const x = document.querySelector('.article--container_content');
