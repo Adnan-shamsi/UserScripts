@@ -21,14 +21,15 @@ window.addEventListener('load', (event) => {
     }
 
     function removeAll(...args){
+      console.log(args);
       args.forEach(arg  => document.querySelectorAll(arg).forEach(e => execute(() => e.remove())))
     }
 
-    let imp = () => execute(() => removeAll(toRemoveList));
+    let imp = () => execute(() => removeAll(...toRemoveList));
 
-    setTimeout(()=>imp(), 500);
-    setTimeout(()=>imp(), 2000);
-    setTimeout(()=>imp(), 3000)
+    setTimeout(imp, 500);
+    setTimeout(imp, 2000);
+    setTimeout(imp, 3000)
 
    // alert("done");
     window.addEventListener('resize',imp);
