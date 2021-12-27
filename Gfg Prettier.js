@@ -17,7 +17,8 @@ window.addEventListener('load', (event) => {
                           '.header-main__wrapper',
                           '.darkMode-wrap',
                           '.right-top',
-                          '.textBasedMannualAds']
+                          '.textBasedMannualAds',
+                          '#ADP_40792_728x250_00000001-82224054-efda-4349-b4e0-312f730ff8ff']
 
     function execute( fn ){
         try{fn()}catch(e){console.log(fn)}
