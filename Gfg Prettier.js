@@ -18,7 +18,7 @@ window.addEventListener('load', (event) => {
                           '.darkMode-wrap',
                           '.right-top',
                           '.textBasedMannualAds',
-                          '#ADP_40792_728x250_00000001-82224054-efda-4349-b4e0-312f730ff8ff']
+                          '._ap_apex_ad']
 
     function execute( fn ){
         try{fn()}catch(e){console.log(fn)}
