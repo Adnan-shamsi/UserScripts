@@ -14,11 +14,11 @@ window.addEventListener('load', (event) => {
     const toRemoveList = ['.adsbygoogle',
                           '.sideBar',
                           '.rightBar',
-                          '.header-main__wrapper',
                           '.darkMode-wrap',
                           '.right-top',
                           '.textBasedMannualAds',
-                          '._ap_apex_ad']
+                          '._ap_apex_ad',
+                         '.header-main__slider']
 
     function execute( fn ){
         try{fn()}catch(e){console.log(fn)}
@@ -29,6 +29,8 @@ window.addEventListener('load', (event) => {
     }
 
     execute(() => removeAll(...toRemoveList));
+
+    execute(() => document.querySelector('.header-main__container').style.background = '#00ffff1f');
 
     execute(()=>{
          const x = document.querySelector('.article--container_content');
