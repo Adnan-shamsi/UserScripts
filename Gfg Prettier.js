@@ -31,6 +31,12 @@ window.addEventListener('load', (event) => {
     execute(() => removeAll(...toRemoveList));
 
     execute(() => document.querySelector('.header-main__container').style.background = '#00ffff1f');
+     
+    execute(() => {
+        const x = document.querySelector('#main')
+        x.style.width = '95%';
+        x.style.margin='auto';
+    });
 
     execute(()=>{
          const x = document.querySelector('.article--container_content');
