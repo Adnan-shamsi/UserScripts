@@ -18,7 +18,10 @@ window.addEventListener('load', (event) => {
                           '.right-top',
                           '.textBasedMannualAds',
                           '._ap_apex_ad',
-                         '.header-main__slider']
+                          '.header-main__wrapper',
+                          '.textBasedMannualAds_2',
+                         '.AdsParent',
+                         '.archive-title div']
 
     function execute( fn ){
         try{fn()}catch(e){console.log(fn)}
@@ -30,8 +33,6 @@ window.addEventListener('load', (event) => {
 
     execute(() => removeAll(...toRemoveList));
 
-    execute(() => document.querySelector('.header-main__container').style.background = '#00ffff1f');
-     
     execute(() => {
         const x = document.querySelector('#main')
         x.style.width = '95%';
@@ -39,10 +40,9 @@ window.addEventListener('load', (event) => {
     });
 
     execute(()=>{
-         const x = document.querySelector('.article--container_content');
-         x.style.width = '150vw'
+         const x = document.querySelector('.article--container_content .left-bottom');
+         x.style.flexBasis = '100%'
      });
-
 
     execute(()=> {
          const flexify = document.querySelector('.article-page_flex');
