@@ -18,7 +18,8 @@ window.addEventListener('load', (event) => {
                         'codeforces.com',
                         'codechef.com',
                         'atcoder.jp',
-                        'codingcompetitions.withgoogle.com']                //add websites link that you are interested in
+                        'codingcompetitions.withgoogle.com',
+                       'leetcode.com']                                         //add websites link that you are interested in
 
     function execute( fn ){
         try{fn()}catch(e){console.log(fn)}
