@@ -30,10 +30,7 @@ window.addEventListener('load', (event) => {
     }
 
     function showOnlyDataOfCertainPlatform(){
-       toShowList.forEach(x =>{
-       console.log(x);
-       execute(()=>document.querySelectorAll(`a[data-original-title='${x}']`).forEach(e => e.closest('.contest').style.display = ''))
-       });
+       execute(()=>[...document.querySelectorAll("small")].filter((e)=> toShowList.includes(e.innerText)).forEach(e => e.closest('.contest').style.display = ''))
     }
 
     removeAll(...toRemoveList);
